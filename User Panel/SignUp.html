@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="SignUp.css" />
+    <title>Sign Up</title>
+  </head>
+  <script src="userPanelScript.js"></script>
+  <body>
+    <section class="container">
+      <div class="signUp">
+        <div class="signUpContent" id="signUpContent" style="display: block">
+          <header>
+            <h2>Sign Up</h2>
+          </header>
+          <form action="#">
+            <div class="input">
+              <input
+                type="text"
+                id="name"
+                placeholder="Full Name"
+                value=""
+                required
+              />
+            </div>
+            <div class="input">
+              <input
+                type="email"
+                id="email"
+                placeholder="Email"
+                value=""
+                required
+              />
+            </div>
+            <div class="input">
+              <input
+                type="tel"
+                id="phoneNumber"
+                placeholder="Phone Number e.g. 03XXXXXXXXX"
+                value=""
+                required
+              />
+            </div>
+            <div class="input">
+              <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                value=""
+                required
+              />
+            </div>
+            <div class="input">
+              <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Confirm Password"
+                value=""
+                required
+              />
+            </div>
+            <div class="input">
+              <button type="submit" onclick="signUp();" class="signUpButton">
+                Sign Up
+              </button>
+            </div>
+            <div class="link">
+              <span
+                >Already have an account? <a href="Login.html">Login</a></span
+              >
+            </div>
+          </form>
+        </div>
+        <div
+          class="signUpSuccessful"
+          id="signUpSuccessful"
+          style="display: none"
+        >
+          <header>
+            <h2>Sign up Successfull!!</h2>
+          </header>
+          <main>
+            <span
+              >Please go to the Login page to <a href="Login.html">log in</a> to
+              your account!!</span
+            >
+          </main>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

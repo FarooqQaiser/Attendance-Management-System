@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="userPanel.css" />
+  </head>
+  <script src="userPanelScript.js"></script>
+  <body>
+    <header>
+      <div class="headerContainer">
+        <div class="userNameContainer">
+          <h2>Welcome, <span class="userName">Farooq</span></h2>
+        </div>
+        <div class="userProfilePicture">
+          <img src="../assets/farooq's pic.jpeg" alt="User's profile picture" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="mainContainer">
+        <div class="attendanceManagement">
+          <div class="mainButton">
+            <button>Mark Attendance</button>
+          </div>
+          <div class="mainButton">
+            <button>Mark Leave</button>
+          </div>
+          <div class="mainButton">
+            <button>View Attendance</button>
+          </div>
+        </div>
+        <div class="leaveRequestContainer">
+          <div class="leaveRequestHeading">
+            <h3>Send Leave Request</h3>
+          </div>
+          <form action="#">
+            <div class="input">
+              <label for="leaveType">Leave Type</label>
+              <select name="leaveType" id="leaveType">
+                <option value="sick">Sick Leave</option>
+                <option value="others">Others</option>
+              </select>
+            </div>
+            <div class="input">
+              <label for="startDate">Start Date</label>
+              <input type="date" id="startDate" />
+            </div>
+            <div class="input">
+              <label for="endDate">End Date</label>
+              <input type="date" id="endDate" />
+            </div>
+            <div class="input">
+              <label for="reason">Reason</label>
+              <input type="text" id="Reason" />
+            </div>
+            <div class="input">
+              <button>Send Request</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
